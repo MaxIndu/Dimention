@@ -1,0 +1,50 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header_main{
+    font-family: 'Roboto Slab', serif;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+body {
+    /*background: #F0F0F3;*/
+    background: url("../img/bkg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.login_form, .intro {
+    /*padding: 0 45px;*/
+    margin: 10%;
+}
+
+.frame_login{
+    /*margin: 5%;*/
+    background-color: #fff;
+    padding: 10% 10%;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #cacaca;
+}
+
+.intro{
+    padding: 6%;
+    color: #fefefe;
+}
+
+.background_img{
+    padding-top: 15px;
+}
+
+.logo{
+    image: url("../img/logo.png");
+}
+
+.warning{
+    font-size: bold;
+    color: red;
+}

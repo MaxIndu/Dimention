@@ -1,0 +1,58 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimention | Spectrum analyzer</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon.ico' %}">
+    <link href="{% static 'css/foundation.css' %}" rel="stylesheet" >
+    <link href="{% static 'css/app.css' %}" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab| Roboto" rel="stylesheet">
+</head>
+<body>
+
+<div class="row background_img">
+    <div class="medium-6 large-6 columns">
+        <div class="intro text-center">
+            <img src="{% static 'img/logo.png' %}" alt="Spectra Logo" class="text-center" style="width:170px;height:170px">
+            <h1 class="header_main">Dimention</h1>
+            <h5>Python based server for image clustering and classification.</h5>
+            <p>&copy; 2016 W.T. Darshana & G.D.L. Gunaratne</p>
+        </div>
+    </div>
+<div class="medium-6 large-6 columns" style="margin-top: 32px;">
+    <div class="login_form">
+        <div class="frame_login">
+    <form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+        <div class="row column">
+            <h4 class="text-center" style="font-weight: bold">Sign In</h4>
+            <label>{{ form.username.label_tag }}{{ form.username }}<!-- <input type="text" placeholder="somebody or somebody@example.com"> --></label>
+            <label>{{ form.password.label_tag }}{{ form.password }}<!-- <input type="password" placeholder="Password" id="password"> --></label>
+            <input id="show-password" type="checkbox" 
+            onchange="document.getElementById('id_password').type = this.checked ? 'text' : 'password'">
+            <label for="show-password">Show password</label>
+
+            {% if form.errors %}
+                <p class="text-center warning">Please use valid credentials.</p>
+            {% endif %}
+
+            <input class="button expanded" style="font-weight: bold" type="submit" value="login"></input>
+            <!--<p class="text-center"><a href="#">Forgot your password?</a></p>-->
+        </div>
+        <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="{% static 'js/vendor/jquery.js' %}"></script>
+<script src="{% static 'js/vendor/what-input.js' %}"></script>
+<script src="{% static 'js/vendor/foundation.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
+
+</body>
+</html>
