@@ -1,13 +1,62 @@
-{% extends 'base.html' %}
+{% load staticfiles %}
 
-{% block content %}
-<div class="container">
-<div class="row">
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="jumbotron">
-  <h1>Hello {{user}}</h1>
-  <p>You are on your Dashboard</p>
-</div>
-</div>
-</div>
-{% endblock %}
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}"> <!-- CSS reset -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Resource style -->
+    <script src="{% static 'js/modernizr.js' %}"></script> <!-- Modernizr -->
+    
+    <title>Dimention | Home</title>
+</head>
+<body>
+    <header>
+        <div class="cd-logo"><a href="#"><img src="{% static 'img/logo.png' %}" alt="Logo"></a></div>
+        <nav class="cd-main-nav-wrapper">
+            <ul class="cd-main-nav">
+                <li><a href="#">About</a></li>
+                <li><a href="/logout">Logout, {{user}}</a></li>
+            </ul> <!-- .cd-main-nav -->
+        </nav> <!-- .cd-main-nav-wrapper -->
+        
+        <a href="#" class="cd-nav-trigger">Menu<span></span></a>
+    </header>
+    
+    <main class="cd-main-content">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui at quasi blanditiis illum voluptatibus, ea sequi cumque voluptatem eligendi! Voluptate, consequatur voluptatum nostrum nulla reiciendis eligendi, distinctio quidem officiis!.
+        Eos sapiente maxime sed, incidunt beatae corporis sint quae aliquam? Asperiores itaque architecto inventore officia facere possimus voluptas. Fugit quos vero consequatur non accusantium molestias adipisci quod aut molestiae quia.
+        A ullam repudiandae quidem vel quo consectetur necessitatibus ea libero delectus perferendis fugiat, provident aspernatur, odio obcaecati doloremque voluptates asperiores unde perspiciatis laudantium sequi blanditiis reiciendis rerum. Debitis, consequuntur, laborum!
+        Odio officia temporibus autem hic esse deserunt ducimus voluptatem magni est, itaque, ullam quas dolor porro, suscipit ipsam nostrum optio praesentium delectus, excepturi debitis. Iusto ipsa excepturi distinctio provident sint.
+        Magnam rem adipisci quidem mollitia iure non ipsa minima dicta libero, suscipit, saepe veritatis asperiores, possimus, laboriosam eveniet ut dolores sit incidunt! Molestiae similique impedit tempore, nobis perferendis, suscipit esse.
+        Omnis nesciunt aperiam alias porro id odio, illo enim consectetur amet ducimus impedit quia soluta totam aspernatur architecto nobis, inventore ullam corrupti asperiores sit sunt vitae veritatis veniam similique. Quis?
+        Molestias officiis voluptatibus maiores enim ducimus laboriosam suscipit ea voluptas et possimus dolorem cum odio perspiciatis nesciunt, molestiae tempore accusamus consequatur optio aliquid unde deserunt a minima. Iusto, quasi, ratione!
+        Blanditiis incidunt rem quis sed, minus suscipit laborum corrupti, nulla voluptas officiis ratione eligendi tenetur saepe ipsam, vitae autem soluta culpa! Est aliquid suscipit nobis ullam perspiciatis, quisquam blanditiis placeat.
+        Dolorem provident sit consequuntur doloremque debitis magnam sunt odio nihil non, accusantium animi sed ab ipsam earum libero quas, dignissimos, labore vel enim harum sequi commodi dolores maxime distinctio. Quod!
+        Nobis odio, fugit, repellat, ut officia molestias provident ad explicabo impedit est neque id voluptatum dolor quasi dolorem eligendi iusto laborum, corporis. Labore, dolores! Voluptate sequi qui impedit nesciunt, cumque?
+        Mollitia maxime laudantium nisi architecto omnis tempora illo labore itaque minima consequatur neque delectus cum aliquam, porro, pariatur, enim minus dolore deserunt fuga ea quod corporis adipisci debitis! Facere, nesciunt.
+        Harum, architecto expedita. Veritatis quos, soluta, provident commodi nemo, beatae veniam ipsum, omnis at quibusdam nesciunt doloribus? Error, suscipit quos. Ipsa aperiam ipsum, laboriosam ipsam illo quis provident veniam inventore.
+        Inventore natus obcaecati pariatur tempore velit esse consectetur facere provident quibusdam voluptate recusandae excepturi magnam eos iusto doloremque sunt explicabo aliquam at, nobis tempora asperiores eligendi voluptatem nihil! Numquam, alias?</div>
+
+        <div>Suscipit, recusandae, iste. Cumque quisquam vitae consequuntur quis? Sunt molestias, repellat ipsum accusantium cupiditate expedita dolore sint ducimus itaque. Ab quos nam vel similique illo dicta consequatur blanditiis explicabo, possimus.
+        Officia, quas. Laboriosam ratione saepe, alias odio similique quae harum, distinctio odit optio accusantium sed, ipsa voluptatum dignissimos vitae magni omnis, quisquam asperiores et commodi iure natus facilis aliquam. Voluptate.
+        Cum, ad voluptatibus aliquid dolorum ut placeat beatae harum facilis quasi provident at sequi assumenda, recusandae fugit, natus repellendus veritatis nobis odit dolorem. Tenetur, itaque laborum id earum dicta voluptatem?
+        Quod nostrum suscipit earum inventore rem ducimus magnam est beatae eius odit soluta, ad itaque ex quia, necessitatibus enim eum nihil aut officia temporibus dolorem consectetur incidunt cum! Laborum, nesciunt!
+        Esse qui soluta sint doloribus ad corporis vitae dolore quas impedit culpa! Soluta magni fuga iusto, id accusantium ea numquam veritatis asperiores atque assumenda, optio tenetur. Maiores, dignissimos quis obcaecati.
+        Corporis dolorem rerum illum totam debitis. Fugit quia reiciendis eum iure voluptas? Molestiae vel similique eum architecto provident mollitia aliquam harum molestias beatae! Ab vel magni ipsam, sequi optio laboriosam.
+        Itaque veritatis nobis, totam libero possimus doloremque quae nihil et est adipisci, facilis illo non tenetur officia ad dolores aut natus, unde corrupti rerum. Tempore deserunt autem facere, sed dolorum.</div>
+        
+    </main>
+
+    <footer class="cd-footer">
+        
+    </footer>
+    <script src="{% static 'js/jquery-2.1.1.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

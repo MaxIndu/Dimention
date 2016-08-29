@@ -1,17 +1,8 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dimention | Spectrum analyzer</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon.ico' %}">
-    <link href="{% static 'css/foundation.css' %}" rel="stylesheet" >
-    <link href="{% static 'css/app.css' %}" rel="stylesheet" >
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab| Roboto" rel="stylesheet">
-</head>
-<body>
+
+{% block content %}
+<link href="{% static 'css/app.css' %}" rel="stylesheet" >
 
 <div class="row background_img">
     <div class="medium-6 large-6 columns">
@@ -49,10 +40,4 @@
 </div>
 </div>
 
-<script src="{% static 'js/vendor/jquery.js' %}"></script>
-<script src="{% static 'js/vendor/what-input.js' %}"></script>
-<script src="{% static 'js/vendor/foundation.js' %}"></script>
-<script src="{% static 'js/app.js' %}"></script>
-
-</body>
-</html>
+{% endblock %}
