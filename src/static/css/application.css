@@ -1,0 +1,132 @@
+*{
+    font-family: 'Whitney SSm A','Whitney SSm B',Helvetica,Arial;
+    font-feature-settings: "liga";
+    font-kerning: auto;
+    color: rgb(82, 99, 107);
+    font-language-override: normal;
+    /*font-size: 14.5px;*/
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 23.2px;
+    text-rendering: optimizelegibility;
+}
+
+h1{
+    color: rgb(36, 38, 40);
+    font-size: 26px;
+    font-synthesis: weight style;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 29.9px;
+}
+
+h2{
+    color: rgb(36, 38, 40);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+strong{
+    line-height: 23.2px;
+    color: rgb(82, 99, 107);
+    font-size: 14.5px;
+    font-weight: 700;
+    line-height: 23.2px;
+}
+
+em{
+    font-size: 14.5px;
+}
+
+p{
+    font-size: 14.5px;
+}
+
+a{
+    color: rgb(38, 168, 237);
+    text-decoration-color: rgb(38, 168, 237);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-rendering: optimizelegibility;
+}
+
+a:hover{
+    text-decoration: underline;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+a, span{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+}
+
+.gh-navbar-btn {
+    margin-left:10px;
+    color:#738a94;
+    transition:all .5s ease
+}
+.gh-navbar-btn span {
+    padding:8px 10px;
+    min-width:66px;
+    height:auto;
+    line-height:1;
+    text-align:center
+}
+.gh-navbar-btn:hover {
+    border-color:#3eb0ef;
+    color:#3da1d6;
+    transition:all .2s ease
+}
+
+.gh-btn {
+    display:inline-block;
+    border:1px solid #ccdfeb;
+    color:#738a94;
+    text-decoration:none!important;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    border-radius:5px;
+    transition:none;
+    -webkit-font-smoothing:subpixel-antialiased
+}
+.gh-btn span {
+    display:block;
+    padding:0 14px;
+    height:37px;
+    font-size:14.5px;
+    line-height:37px;
+    font-weight:400;
+    border-radius:4px
+}
+
+a {
+    background-color: transparent;
+}
